@@ -18,21 +18,6 @@ $(document).ready(function() {
     var submitted = false;
 
     $('form.ajax').on('submit', function(e) {
-    
-        //!COME BACK TO, POSITION NOT WORKING
-        if (!submitted) {
-                // contactFormTL.add(TweenMax.staggerFrom('label', 0.5, {
-                //         y: -20, 
-                //         opacity: 0,
-                //         ease:Expo.EaseIn
-                //     }, "-=0.5")  
-                // ) 
-            console.log(contactFormTL.duration());
-            contactFormTL.add(TweenLite.from($('label'), 0.5, {opacity: 0, y: -10}, "-=1"));
-            console.log(contactFormTL.duration());
-        }
-        submitted = true;
-
 
         //If the form is valid, send data and run animation
         if ($('form.ajax').valid()) {
